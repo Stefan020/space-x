@@ -15,13 +15,11 @@ const Home = () => {
         }   
     }, [data])
 
-    
-
     return (
             <Grid container alignItems="stretch" spacing={3}>
                 {
                   missions && missions.map((mission) => (
-                        <Grid key={mission.id} item  md={4}>
+                        <Grid key={mission.id} item xs={12} sm={6} md={4}>
                             <MissionCard mission={ mission } />
                         </Grid>
                     ))
